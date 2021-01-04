@@ -1,0 +1,81 @@
+
+#EurekaServer的appname要一致，这样才能组成一个集群
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    #是否注册到其他Eureka节点构成集群,默认是true
+    register-with-eureka: true
+    #是否从其他Eureka节点拉取注册信息,默认是true
+    fetch-registry: true
+    #设置服务注册中心的URL，用于client和server端交流
+    service-url:
+      #带有zone的原因是最初该项目在亚马逊上部署，因此有部分配置沿用了早期的配置，配置多个地址的话就可以向多个节点去注册
+      defaultZone: http://euk1.com:7900/eureka/,http://euk2.com:7901/eureka/,http://euk3.com:7902/eureka/
+  #个性化信息，可以用于区分服务器
+  instance:
+    metadata-map:
+      dalao: zhangyibing
+
+
+  server:
+    #自我保护开关
+    enable-self-preservation: true
+    #开启自我保护的阈值
+    renewal-percent-threshold: 0.85
+    #剔除服务优化的时间间隔
+    eviction-interval-timer-in-ms: 1000
+    #关闭从readOnly读注册表
+    use-read-only-response-cache: false
+    # readWrite 和 readOnly 同步时间间隔，默认30s,这个可以优化一下为1s
+    response-cache-update-interval-ms: 1000
+
+# ----------------------服务测算--------------------------------------------------
+#  1.心跳
+#       续约间隔 * 服务实例数
+#       20个服务，心跳默认30s，每个服务部署5个实例，共100个实例
+#       每30s注册100次，则每分钟注册200次，每小时1200次，每天1200*24 = 28800次
+#  2.拉取服务列表
+#       100个实例，30s一次，每分钟200次
+#       每30s注册100次，则每分钟注册200次，每小时1200次，每天1200*24 = 28800次
+#  共：  28800 * 2 = 57600 次
+#  总结： EurekaServer的承载能力很强，有测试0.1s就可以调用1W次，即几百个微服务的访问是完全没有问题的
+# -------------------------------------------------------------------------------
+
+
+
+#  instance:
+#    hostname: euk1.com
+# hostname是用来查找主机地址的
+---
+spring:
+  profiles: 7900
+server:
+  port: 7900
+eureka:
+  instance:
+    hostname: euk1.com
+
+---
+spring:
+  profiles: 7901
+server:
+  port: 7901
+eureka:
+  instance:
+    hostname: euk2.com
+
+---
+spring:
+  profiles: 7902
+server:
+  port: 7902
+eureka:
+  instance:
+    hostname: euk3.com
+
+
+
+
