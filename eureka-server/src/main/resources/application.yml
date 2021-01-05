@@ -21,7 +21,7 @@ eureka:
 
 
   server:
-    #自我保护开关
+    #自我保护开关，默认是开启的
     enable-self-preservation: true
     #开启自我保护的阈值
     renewal-percent-threshold: 0.85

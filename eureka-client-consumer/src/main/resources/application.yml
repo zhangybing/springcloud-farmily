@@ -4,7 +4,9 @@ eureka:
     service-url:
       #带有zone的原因是最初该项目在亚马逊上部署，因此有部分配置沿用了早期的配置，配置多个地址的话就可以向多个节点去注册
       defaultZone: http://euk1.com:7900/eureka/,http://euk2.com:7901/eureka/,http://euk3.com:7902/eureka/
-
+    #开启手动控制，将自己真正的健康状态传播到Server
+    healthcheck:
+      enabled: true
 server:
   port: 9090
   servlet:
@@ -17,3 +19,13 @@ spring:
 
 
 
+management:
+  #开启上报本节点的信息，*代表上报本节点所有的信息
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  #开启之后，可以远程关闭该节点,但是只支持POST请求
+  endpoint:
+    shutdown:
+      enabled: true
