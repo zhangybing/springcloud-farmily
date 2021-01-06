@@ -17,7 +17,7 @@ public class HealthController {
     @Autowired
     HealthStatusService healthStatusService;
 
-    @GetMapping("/health")
+    @GetMapping("/status")
     public String health(@RequestParam("status") Boolean status) {
         healthStatusService.setStatus(status);
         return healthStatusService.getStatus();

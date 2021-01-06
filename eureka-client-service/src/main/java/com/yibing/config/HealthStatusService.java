@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @author Administrator
+ * 服务手动上下线必须要实现的方法
  */
 @Service
 public class HealthStatusService implements HealthIndicator {
