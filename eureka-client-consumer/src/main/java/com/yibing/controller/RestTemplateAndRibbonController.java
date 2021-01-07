@@ -27,7 +27,6 @@ public class RestTemplateAndRibbonController {
         /**
          * ribbon完成客户端的负载均衡，负载均衡策略可以选择
          * 优点：lb的choose方法会自动选择一个可用的service，把已经down掉的service剔除
-         * 缺点：需要自己手动拼接hostname和port
          */
         String url = "http://eureka-client-service/service/hello/sayHello";
         String response = restTemplate.getForObject(url, String.class);
