@@ -18,13 +18,19 @@ public class RestTemplateAndRibbonController {
     RestTemplate restTemplate;
 
     /**
-     * 负载均衡客户端,可以将请求较为均匀的分发到所有服务节点上
+     * RestTemplate集成Ribbon，即不用手动拼host和port了
+     * 只需要服务名+接口名即可
+     * @return
      */
-    @Autowired
-    LoadBalancerClient loadBalancerClient;
-
-    @GetMapping("/useRestAndRibbon")
-    public Object useRestAndRibbon() {
-        return null;
+    @GetMapping("/restTemplateHasRibbon")
+    public Object restTemplateHasRibbon() {
+        /**
+         * ribbon完成客户端的负载均衡，负载均衡策略可以选择
+         * 优点：lb的choose方法会自动选择一个可用的service，把已经down掉的service剔除
+         * 缺点：需要自己手动拼接hostname和port
+         */
+        String url = "http://eureka-client-service/service/hello/sayHello";
+        String response = restTemplate.getForObject(url, String.class);
+        return response;
     }
 }

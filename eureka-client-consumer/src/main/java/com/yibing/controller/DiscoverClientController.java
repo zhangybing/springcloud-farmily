@@ -5,7 +5,9 @@ import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
+import org.springframework.cloud.netflix.ribbon.RibbonLoadBalancerClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -99,7 +101,7 @@ public class DiscoverClientController {
 
 
     /**
-     * 获取服务，并且使用LB调用服务方接口
+     * 获取服务，并且使用LB调用服务方接口，此时restTemplate没有集成bibbon
      */
     @GetMapping("/getServiceAndRequestServiceByLb")
     public Object getServiceAndRequestServiceByLb() {
@@ -108,11 +110,13 @@ public class DiscoverClientController {
          * 优点：lb的choose方法会自动选择一个可用的service，把已经down掉的service剔除
          * 缺点：需要自己手动拼接hostname和port
          */
+
         ServiceInstance service = loadBalancerClient.choose("eureka-client-service");
         String url = "http://" + service.getHost() + ":" + service.getPort() + "/service/hello/sayHello";
         System.out.println("RequestUrl:" + url);
         String response = restTemplate.getForObject(url, String.class);
         return response;
     }
+
 
 }
