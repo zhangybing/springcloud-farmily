@@ -3,7 +3,7 @@ eureka:
     #设置服务注册中心的URL，用于client和server端交流
     service-url:
       #带有zone的原因是最初该项目在亚马逊上部署，因此有部分配置沿用了早期的配置，配置多个地址的话就可以向多个节点去注册
-      defaultZone: http://euk1.com:7900/eureka/,http://euk2.com:7901/eureka/,http://euk3.com:7902/eureka/
+      defaultZone: http://zhangyibing:123456@euk1.com:7900/eureka/,http://zhangyibing:123456@euk2.com:7901/eureka/,http://zhangyibing:123456@euk3.com:7902/eureka/
     #开启手动控制，将自己真正的健康状态传播到Server
     healthcheck:
       enabled: true

@@ -37,6 +37,9 @@ public class DiscoverClientController {
     @Autowired
     LoadBalancerClient loadBalancerClient;
 
+    @Autowired
+    RestTemplate restTemplate;
+
 
     /**
      * 获取所有服务名
@@ -88,7 +91,6 @@ public class DiscoverClientController {
             if (service.getStatus() == InstanceInfo.InstanceStatus.UP) {//说明服务可用
                 String url = "http://" + service.getHostName() + ":" + service.getPort() + "/service/hello/sayHello";
                 System.out.println("RequestUrl:" + url);
-                RestTemplate restTemplate = new RestTemplate();
                 response = restTemplate.getForObject(url, String.class);
             }
         }
@@ -109,7 +111,6 @@ public class DiscoverClientController {
         ServiceInstance service = loadBalancerClient.choose("eureka-client-service");
         String url = "http://" + service.getHost() + ":" + service.getPort() + "/service/hello/sayHello";
         System.out.println("RequestUrl:" + url);
-        RestTemplate restTemplate = new RestTemplate();
         String response = restTemplate.getForObject(url, String.class);
         return response;
     }
