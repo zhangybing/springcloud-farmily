@@ -1,8 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d62aad15-309e-48f1-a61d-98a6ce4f71db" name="Default Changelist" comment="提交">
+    <list default="true" id="d62aad15-309e-48f1-a61d-98a6ce4f71db" name="Default Changelist" comment="RestTemplate集成Ribbon">
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/client/ConsumerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/OpenFeignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/RestTemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/yibing/serviceapi/ServiceApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/yibing/serviceapi/service/ServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/src/test/java/com/yibing/serviceapi/ServiceApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/EurekaClientConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/EurekaClientConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-service/src/main/java/com/yibing/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/src/main/java/com/yibing/controller/HelloController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -29,8 +67,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1mJ0Fp03i1ZuIaYVOuB9rfScRs1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -39,6 +80,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/Git/bin/git.exe" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -53,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Eureka-client-consumer">
+  <component name="RunManager" selected="Spring Boot.Eureka-server-7902">
     <configuration name="Eureka-client-consumer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-client-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaClientConsumerApplication" />
@@ -63,10 +107,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Eureka-client-service" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="Eureka-client-service-8080" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-client-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaClientServiceApplication" />
-      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Eureka-client-service-8081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaClientServiceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,6 +150,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.serviceapi.ServiceApiApplication" />
+      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaServerApplication" />
@@ -112,8 +172,10 @@
       <item itemvalue="Spring Boot.Eureka-server-7900" />
       <item itemvalue="Spring Boot.Eureka-server-7901" />
       <item itemvalue="Spring Boot.Eureka-server-7902" />
-      <item itemvalue="Spring Boot.Eureka-client-service" />
+      <item itemvalue="Spring Boot.Eureka-client-service-8080" />
+      <item itemvalue="Spring Boot.Eureka-client-service-8081" />
       <item itemvalue="Spring Boot.Eureka-client-consumer" />
+      <item itemvalue="Spring Boot.ServiceApiApplication" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -129,7 +191,15 @@
       <workItem from="1609196289153" duration="2602000" />
       <workItem from="1609281530585" duration="4477000" />
       <workItem from="1609368190771" duration="5587000" />
-      <workItem from="1609799089944" duration="3352000" />
+      <workItem from="1609799089944" duration="4901000" />
+      <workItem from="1609885611767" duration="5514000" />
+      <workItem from="1609971601999" duration="5255000" />
+      <workItem from="1610058425162" duration="3948000" />
+      <workItem from="1610234781720" duration="4796000" />
+      <workItem from="1610240482485" duration="1500000" />
+      <workItem from="1610243054846" duration="665000" />
+      <workItem from="1610258515823" duration="76000" />
+      <workItem from="1610258747261" duration="8731000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1609800759294</created>
@@ -159,7 +229,56 @@
       <option name="project" value="LOCAL" />
       <updated>1609801916748</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="提交">
+      <created>1609802632642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609802632642</updated>
+    </task>
+    <task id="LOCAL-00006" summary="提交">
+      <created>1609890404423</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609890404423</updated>
+    </task>
+    <task id="LOCAL-00007" summary="手动控制服务上下线">
+      <created>1609892526084</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609892526084</updated>
+    </task>
+    <task id="LOCAL-00008" summary="开启 Eureka 服务安全验证">
+      <created>1609973935999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609973936000</updated>
+    </task>
+    <task id="LOCAL-00009" summary="RestTemplate改为单例注入">
+      <created>1609977950798</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609977950798</updated>
+    </task>
+    <task id="LOCAL-00010" summary="RestTemplate集成Ribbon">
+      <created>1610061648705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610061648705</updated>
+    </task>
+    <task id="LOCAL-00011" summary="RestTemplate集成Ribbon">
+      <created>1610061816097</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610061816097</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,14 +289,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+    <MESSAGE value="手动控制服务上下线" />
+    <MESSAGE value="开启 Eureka 服务安全验证" />
+    <MESSAGE value="RestTemplate改为单例注入" />
+    <MESSAGE value="RestTemplate集成Ribbon" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestTemplate集成Ribbon" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/DiscoverClientController.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
