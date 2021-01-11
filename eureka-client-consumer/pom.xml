@@ -17,6 +17,11 @@
     </properties>
 
     <dependencies>
+        <!-- Hystrix用来熔断，降级，限流 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.yibing</groupId>
             <artifactId>service-api</artifactId>
