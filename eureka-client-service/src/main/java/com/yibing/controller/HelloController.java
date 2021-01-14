@@ -23,6 +23,7 @@ public class HelloController {
         /**
          * 这里设置等待时间，是为了测试ribbon的超时机制
          */
+        int a = 1 / 0;
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

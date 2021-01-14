@@ -2,11 +2,20 @@ package com.yibing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
+//开启Hystrix的监控
+
+import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
+
 @EnableFeignClients
+@EnableHystrixDashboard
+@EnableCircuitBreaker
 @SpringBootApplication
 public class EurekaClientConsumerApplication {
 
@@ -35,4 +44,5 @@ public class EurekaClientConsumerApplication {
 //        //return new RetryRule();
 //        return new RandomRule();
 //    }
+
 }
