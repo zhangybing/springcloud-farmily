@@ -11,9 +11,6 @@
       <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/client/ConsumerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/OpenFeignController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/RestTemplateController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-client-service/.classpath" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-client-service/.project" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
@@ -27,19 +24,22 @@
       <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/yibing/serviceapi/ServiceApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/java/com/yibing/serviceapi/service/ServiceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/src/test/java/com/yibing/serviceapi/ServiceApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/EurekaClientConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/EurekaClientConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/OpenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/OpenFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-service/src/main/java/com/yibing/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/src/main/java/com/yibing/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-net/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-net/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,7 +97,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Eureka-server-7902">
+  <component name="RunManager" selected="Spring Boot.ZuulNetApplication">
+    <configuration name="EurekaClientConsumerApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yibing.EurekaClientConsumerApplication" />
+      <module name="eureka-client-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yibing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yibing.hystrix.HystrixClass" />
+      <module name="eureka-client-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yibing.hystrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashbordApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dashbord" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.DashbordApplication" />
+      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Eureka-client-consumer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-client-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaClientConsumerApplication" />
@@ -150,9 +185,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrix" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.HystrixApplication" />
+      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.serviceapi.ServiceApiApplication" />
+      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulNetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul-net" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.ZuulNetApplication" />
       <option name="ACTIVE_PROFILES" value="7900" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -169,6 +222,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.HystrixClass" />
+      <item itemvalue="Application.EurekaClientConsumerApplication" />
       <item itemvalue="Spring Boot.Eureka-server-7900" />
       <item itemvalue="Spring Boot.Eureka-server-7901" />
       <item itemvalue="Spring Boot.Eureka-server-7902" />
@@ -176,7 +231,16 @@
       <item itemvalue="Spring Boot.Eureka-client-service-8081" />
       <item itemvalue="Spring Boot.Eureka-client-consumer" />
       <item itemvalue="Spring Boot.ServiceApiApplication" />
+      <item itemvalue="Spring Boot.HystrixApplication" />
+      <item itemvalue="Spring Boot.DashbordApplication" />
+      <item itemvalue="Spring Boot.ZuulNetApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EurekaClientConsumerApplication" />
+        <item itemvalue="Application.HystrixClass" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -199,7 +263,16 @@
       <workItem from="1610240482485" duration="1500000" />
       <workItem from="1610243054846" duration="665000" />
       <workItem from="1610258515823" duration="76000" />
-      <workItem from="1610258747261" duration="8731000" />
+      <workItem from="1610258747261" duration="9455000" />
+      <workItem from="1610318550458" duration="2647000" />
+      <workItem from="1610405139153" duration="165000" />
+      <workItem from="1610405325978" duration="5250000" />
+      <workItem from="1610491458199" duration="2569000" />
+      <workItem from="1610578389646" duration="3257000" />
+      <workItem from="1610663195863" duration="2234000" />
+      <workItem from="1610850029027" duration="4028000" />
+      <workItem from="1610923618141" duration="2005000" />
+      <workItem from="1611009716257" duration="2791000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1609800759294</created>
@@ -278,7 +351,49 @@
       <option name="project" value="LOCAL" />
       <updated>1610061816097</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="声明API，使用OpenFeign">
+      <created>1610281007316</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610281007316</updated>
+    </task>
+    <task id="LOCAL-00013" summary="引入Ribbon的服务调用失败重试机制">
+      <created>1610323117106</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610323117106</updated>
+    </task>
+    <task id="LOCAL-00014" summary="脱离spring cloud,使用Hystrix">
+      <created>1610406226869</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610406226869</updated>
+    </task>
+    <task id="LOCAL-00015" summary="OpenFeign整合hystrix">
+      <created>1610409207553</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610409207553</updated>
+    </task>
+    <task id="LOCAL-00016" summary="引入HystrixDashboard">
+      <created>1610583743180</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610583743180</updated>
+    </task>
+    <task id="LOCAL-00017" summary="RestTemplate集成Ribbon">
+      <created>1610874116715</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610874116715</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +418,11 @@
     <MESSAGE value="手动控制服务上下线" />
     <MESSAGE value="开启 Eureka 服务安全验证" />
     <MESSAGE value="RestTemplate改为单例注入" />
+    <MESSAGE value="声明API，使用OpenFeign" />
+    <MESSAGE value="引入Ribbon的服务调用失败重试机制" />
+    <MESSAGE value="脱离spring cloud,使用Hystrix" />
+    <MESSAGE value="OpenFeign整合hystrix" />
+    <MESSAGE value="引入HystrixDashboard" />
     <MESSAGE value="RestTemplate集成Ribbon" />
     <option name="LAST_COMMIT_MESSAGE" value="RestTemplate集成Ribbon" />
   </component>

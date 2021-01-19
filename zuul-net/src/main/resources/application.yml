@@ -18,4 +18,21 @@ zuul:
     route1:       # 随意写的区分不同映射服务器的名称（只是区分不同的映射服务器）
       path: /zuul/**    # 自定义映射服务器路径的名称（相当于key，外部访问这个地址会映射到下面的service-id这个value值。然后从eureka服务列表找到对应服务名称，进而负载均衡的请求一个服务器）
       service-id: eureka-client-consumer     # eureka注册中心中要映射的服务名称，因为是双层map结构，所以可以实现负载均衡和高可用
-    
+
+#zuul负载均衡策略
+consumer:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+#调试的时候，看网关请求的地址，以及 映射是否正确。网关请求有误时，可以通过此处排查错误
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    routes:
+      enabled: true

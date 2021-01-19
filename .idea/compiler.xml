@@ -10,7 +10,12 @@
         <module name="eureka-client-service" />
         <module name="eureka-client-consumer" />
         <module name="eureka-server" />
+        <module name="zuul-net" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dashbord" target="1.8" />
+      <module name="hystrix" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

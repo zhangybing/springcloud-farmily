@@ -23,18 +23,17 @@ public class HelloController {
         /**
          * 这里设置等待时间，是为了测试ribbon的超时机制
          */
-        int a = 1 / 0;
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         int i = count.incrementAndGet();
         String id = request.getParameter("id");
         String name = request.getParameter("name");
         System.out.println("第"+count+"次调用");
-        return port + ": hello spring cloud :---->"+id+"------"+name;
+        return "Service:"+port + ": hello spring cloud :---->"+id+"------"+name;
     }
 
 }

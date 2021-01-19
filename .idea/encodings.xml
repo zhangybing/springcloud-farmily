@@ -5,5 +5,7 @@
     <file url="file://$PROJECT_DIR$/eureka-client-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-net" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-net" charset="UTF-8" />
   </component>
 </project>
