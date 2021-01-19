@@ -1,45 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d62aad15-309e-48f1-a61d-98a6ce4f71db" name="Default Changelist" comment="RestTemplate集成Ribbon">
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-consumer/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client-service/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-api/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-net/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d62aad15-309e-48f1-a61d-98a6ce4f71db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/OpenFeignController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/java/com/yibing/controller/OpenFeignController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client-service/src/main/java/com/yibing/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/src/main/java/com/yibing/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-net/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-net/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +100,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Eureka-client-consumer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="Eureka-client-consumer-9090" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaClientConsumerApplication" />
+      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Eureka-client-consumer-9091" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-client-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.EurekaClientConsumerApplication" />
       <option name="ACTIVE_PROFILES" value="7900" />
@@ -229,7 +205,8 @@
       <item itemvalue="Spring Boot.Eureka-server-7902" />
       <item itemvalue="Spring Boot.Eureka-client-service-8080" />
       <item itemvalue="Spring Boot.Eureka-client-service-8081" />
-      <item itemvalue="Spring Boot.Eureka-client-consumer" />
+      <item itemvalue="Spring Boot.Eureka-client-consumer-9090" />
+      <item itemvalue="Spring Boot.Eureka-client-consumer-9091" />
       <item itemvalue="Spring Boot.ServiceApiApplication" />
       <item itemvalue="Spring Boot.HystrixApplication" />
       <item itemvalue="Spring Boot.DashbordApplication" />
@@ -272,7 +249,8 @@
       <workItem from="1610663195863" duration="2234000" />
       <workItem from="1610850029027" duration="4028000" />
       <workItem from="1610923618141" duration="2005000" />
-      <workItem from="1611009716257" duration="2791000" />
+      <workItem from="1611009716257" duration="2843000" />
+      <workItem from="1611095339897" duration="3520000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1609800759294</created>
@@ -393,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610874116715</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="...">
+      <created>1611015793553</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611015793554</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +409,8 @@
     <MESSAGE value="OpenFeign整合hystrix" />
     <MESSAGE value="引入HystrixDashboard" />
     <MESSAGE value="RestTemplate集成Ribbon" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestTemplate集成Ribbon" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
