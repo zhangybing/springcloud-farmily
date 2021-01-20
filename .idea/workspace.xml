@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d62aad15-309e-48f1-a61d-98a6ce4f71db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-cloud-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-admin/spring-cloud-admin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-admin/src/main/java/com/yibing/SpringCloudAdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-admin/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-admin/src/test/java/com/yibing/SpringCloudAdminApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-consumer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-client-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZuulNetApplication">
+  <component name="RunManager" selected="Spring Boot.Eureka-server-7902">
     <configuration name="EurekaClientConsumerApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yibing.EurekaClientConsumerApplication" />
       <module name="eureka-client-consumer" />
@@ -179,6 +189,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringCloudAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.SpringCloudAdminApplication" />
+      <option name="ACTIVE_PROFILES" value="7900" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZuulNetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="zuul-net" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yibing.ZuulNetApplication" />
@@ -211,6 +230,7 @@
       <item itemvalue="Spring Boot.HystrixApplication" />
       <item itemvalue="Spring Boot.DashbordApplication" />
       <item itemvalue="Spring Boot.ZuulNetApplication" />
+      <item itemvalue="Spring Boot.SpringCloudAdminApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -250,7 +270,7 @@
       <workItem from="1610850029027" duration="4028000" />
       <workItem from="1610923618141" duration="2005000" />
       <workItem from="1611009716257" duration="2843000" />
-      <workItem from="1611095339897" duration="3520000" />
+      <workItem from="1611095339897" duration="5564000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1609800759294</created>
@@ -378,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611015793554</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="使用sleuth和zipkin实现链路追踪">
+      <created>1611099040414</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611099040414</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +437,8 @@
     <MESSAGE value="引入HystrixDashboard" />
     <MESSAGE value="RestTemplate集成Ribbon" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="使用sleuth和zipkin实现链路追踪" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用sleuth和zipkin实现链路追踪" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

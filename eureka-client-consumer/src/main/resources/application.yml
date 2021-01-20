@@ -8,7 +8,7 @@ eureka:
     healthcheck:
       enabled: true
 server:
-  port: 9091
+  port: 9090
   servlet:
     context-path: /consumer
 
@@ -17,6 +17,10 @@ spring:
     name: eureka-client-consumer
   zipkin:
         baseUrl: http://localhost:9411
+  boot:
+    admin:
+      client:
+        url: http://localhost:8888
 
 
 
@@ -29,6 +33,8 @@ management:
         include: '*'
   #开启之后，可以远程关闭该节点,但是只支持POST请求
   endpoint:
+    health:
+      show-details: always
     shutdown:
       enabled: true
 

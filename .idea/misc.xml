@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/dashbord/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-net/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-admin/pom.xml" />
       </list>
     </option>
   </component>
